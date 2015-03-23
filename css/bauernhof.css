@@ -362,19 +362,18 @@ li a{
 
       /*language*/
       a.language{
-        position: fixed;
-        left: 10px;
-        bottom: 40px;
-        font-family: "jaf-bernino-sans", sans-serif;
-        transform: rotate(-90deg);
-        font-weight: 300;
-        color: #fff;
-        letter-spacing: 0.1em;
-        text-align: center;
-        font-size: 0.8em;
-        background-color: #447A9B;
-        padding: 10px;
-        border-radius: 3px;
+       position: fixed;
+       right: 30px;
+       top: 110px;
+       font-family: "jaf-bernino-sans", sans-serif;
+       font-weight: 300;
+       color: #fff;
+       letter-spacing: 0.1em;
+       text-align: center;
+       font-size: 0.7em;
+       background-color: #447A9B;
+       padding: 7px;
+       border-radius: 3px
 
       }
 
@@ -386,7 +385,7 @@ li a{
       /* startseite */
       .willkommen {
        position:fixed;
-       bottom:0px;
+       bottom:0;
        width:100%;
        color: #fff;
        line-height: 100px;
