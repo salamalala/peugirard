@@ -112,26 +112,31 @@ nav{
 }
 
 @media (max-width: 1125px) {
-  nav {
-    font-size: 1.4em;
-    line-height: 1.5em;
+    nav {
+      font-size: 1.4em;
+      line-height: 1.5em;
 
+    }
   }
-}
 
 @media (max-width: 992px) {
-  nav {
-   font-size: 1.2em;
-   line-height: 1.4em;
- }
-}
+    nav {
+       font-size: 1.2em;
+       line-height: 1.4em;
+    }
+  }
 
 @media (max-width: 768px) {
-  nav {
-   font-size: 1.2em;
- }
-}
+    nav {
+       font-size: 1.2em;
+    }
+  }
 
+  @media (max-width: 480px) {
+      nav {
+         font-size: 1em;
+      }
+    }
 
 
 .logo a{
@@ -246,6 +251,13 @@ li a{
         display: inline-block;
         font-weight: 700;}
       }
+
+      @media (max-width: 480px) {
+                li a{
+                    width: 63px; 
+                    display: inline-block;
+                    font-weight: 700;}
+              }
 
 
       .first_nav a{
@@ -399,9 +411,25 @@ li a{
        background: rgba(217, 194, 122, 0.85); 
      }
 
+       @media (max-width: 480px) {
+       .willkommen {
+        position:fixed;
+        bottom:0px;
+        width:100%;
+        color: #fff;
+        line-height: 40px;
+       }
+     }
+
      .willkommen h1{
       background: rgba(217, 194, 122, 0.8); 
       text-align: center;
+    }
+
+      @media (max-width: 480px) {
+      .willkommen h1{
+        font-size: 16.3px;
+      }
     }
 
     /* general text style */
