@@ -148,6 +148,7 @@ nav{
 
 .logo p {
   font-family: "jaf-bernino-sans", sans-serif;
+  text-transform: uppercase;
   font-weight: 300;
   color: #fff;
   letter-spacing: 0.03em;
@@ -156,7 +157,7 @@ nav{
   display: inline-block;
   position: fixed;
   margin: 0;
-  left: 150px;
+  left: 130px;
   z-index: 2;
   color: white;
   line-height: 90px;  
@@ -166,8 +167,8 @@ nav{
   position: fixed;
   top:10px;
   left: 10px;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   display: inline-block;
   transform: rotate(-5deg);
 }
@@ -360,10 +361,25 @@ li a{
 
 
       /*language*/
-      .language{
+      a.language{
         position: fixed;
-        right: 20px;
-        top: 120px;
+        left: 10px;
+        bottom: 40px;
+        font-family: "jaf-bernino-sans", sans-serif;
+        transform: rotate(-90deg);
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-size: 0.8em;
+        background-color: #447A9B;
+        padding: 10px;
+        border-radius: 3px;
+
+      }
+
+      a.language:hover{
+        background-color: #2d719b;
       }
 
 
@@ -374,6 +390,14 @@ li a{
        width:100%;
        color: #fff;
        line-height: 100px;
+     }
+
+      .willkommen a{
+       color: #fff;
+     }
+
+      .willkommen a h1:hover{
+       background: rgba(217, 194, 122, 0.85); 
      }
 
      .willkommen h1{
