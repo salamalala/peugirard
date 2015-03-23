@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Le Peu Girard. Bauernhof, Ferien, Bioprodukte</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bauernhof.css">
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300' rel='stylesheet' type='text/css'>
+	<script src="//use.typekit.net/sch4kzi.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+	
+</head>
+
+<body>
+
+<!--row 1 -->
+<div class="container-fluid">
+
+	<img class="startbild" src="img/start_web_blured.jpg" id="bauernhof_bild" alt="Unser Bauernhof">
+
+	<nav class="row">  
+      <div class="logo col-md-4 col-sm-4 col-xs-4"> 
+      <a href="index.html" title="Zurück auf die Startseite">
+        <p>LE PEU-GIRARD</p>
+        <img class="logo" src="img/logo.png" alt"Ein Blatt">
+        <p> FERME BIO</p>
+      </a>
+      </div>  
+      <ul class="col-md-8  col-sm-8 col-xs-8 menu">
+        <li class="fifth_nav active_nav"><a href="kontakt.html" title="Kontakt">Kontakt</a></li>
+        <li class="forth_nav"><a href="bilder.html" title="Ein paar schöne Bilder">Bilder</a></li>
+        <li class="third_nav"><a href="produkte.html" title="Unsere feinen Produkte">Produkte <br>ab Hof</a></li>
+        <li class="second_nav"><a href="ferien.html" title="Ferien bei uns">Ferien auf dem Bauernhof</a></li>  
+        <li class="first_nav"> <a href="ueber_uns.html" title="Über uns und unser Tiere">Über uns & unsere Tiere</a></li>
+      </ul>
+    </nav>
+
+
+	<div class="row"> <!--main row -->
+		<div class="kontakt textfeld col-md-8 col-md-offset-2">
+			<div class="block row">
+				<div class="col-md-5 adresse">
+					<h2>Kontakt:</h2>
+					<p>Kathrine Naef-Fischer <br>
+					Le Peu-Girard 46<br>
+					2345 Les Breuleux <br>
+					Tel: +41 (0)32 954 13 03<br>
+					<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;%6E%61%65%66%2D%66%69%73%63%68%65%72%40%62%6C%75%65%77%69%6E%2E%63%68 "title="&#x45;&#x2d;&#x4d;&#x61;&#x69;&#x6c;">&#x6e;&#x61;&#x65;&#x66;&#x2d;&#x66;&#x69;&#x73;&#x63;&#x68;&#x65;&#x72;&#x40;&#x62;&#x6c;&#x75;&#x65;&#x77;&#x69;&#x6e;&#x2e;&#x63;&#x68;</a>
+          www.erlebnis-bio-hof.ch
+					</p>
+				</div>
+
+				<div id="map_canvas" class="karte col-md-7"></div>
+			</div>
+
+			<div class="block row">
+				<div class="col-md-12">
+				<h2>Anfahrt:</h2>
+				<p><span>Mit dem Auto:</span> Siehe Karte</p><br>
+				<p><span>Mit öffentlichen Verkehrsmitteln: </span>Mit dem Zug bis Les Breuleux. Danach 20 Minuten zu Fuss bis Le Peu-Girard. Auf Wunsch holen wir Sie und/oder Ihr Gepäck am Bahnhof in Les Breuleux ab.</p>
+				</div>
+
+			</div>
+
+			<div class="block row">
+				<div class="col-md-12">
+				<h2>Weiterführende Links:</h2>
+				<ul>
+					<li> <a href="http://www.juratourisme.ch" target="_blank">Juratourisme</a></li>
+          <li> <a href="http://www.juratourisme.ch/de/aktiv/wanderland.html" target="_blank">Wandern</a></li>
+          <li> <a href="http://www.juratourisme.ch/de/aktiv/veloland.html" target="_blank">Velofahren</a></li>
+          <li> <a href="http://www.centredeloisirs.ch/Wellness-spa-2.html" target="_blank">Wellness</a></li>
+					<li> <a href="http://www.juratourisme.ch/de/aktiv/langlauf/schlaufe-lesnbspbreuleux.1354.html" target="_blank">Langlaufen</a></li>
+					<li> <a href="http://www.cafe-du-soleil.ch/" target="_blank">Cafe du Soleil</a></li>
+					<li> <a href="http://www.cinemalux.ch/" target="_blank">Cinema Lux</a></li>
+					<li> <a href="http://www.lescheminsdubio.ch/de/" target="_blank">Le chemin du bio</a></li>
+          <li> <a href="http://www.edelweiss-cosmetique.ch/edelweiss" target="_blank">Edelweisskosmetik</a></li>
+
+			</div>						
+
+		</div> <!--Ende textfeld-->
+	</div> <!--Ende main row-->
+
+
+</div> <!--Ende Container-fluid-->
+
+
+<script type="text/javascript"
+      	src="http://maps.googleapis.com/maps/api/js?">
+    	</script>
+
+    	<script type="text/javascript">
+
+    	var map;
+		var bern = new google.maps.LatLng(47.210344,6.985175);
+
+		var ae = 'custom_style';
+
+
+      	function initialize() {
+      	
+      	var featureOpts = [
+	    {
+	      stylers: [
+	      	{ saturation: -65 }, 
+			{ visibility: 'on' }, 
+			{ lightness: 13 }, 
+			{ gamma: 0.8 } 
+	      ]
+	    },
+	    {
+	      elementType: "geometry.fill",
+	      stylers: [
+	        { visibility: 'on' }
+	      ]
+	    },
+	    
+	  ];
+      	
+        var mapOptions = {
+          center: new google.maps.LatLng(47.210344,6.985175),
+          zoom: 12,
+          mapTypeControlOptions: {
+	      mapTypeIds: [google.maps.MapTypeId.ROADMAP, ae]
+    		},
+          mapTypeId: ae
+                  };
+                  
+         var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+	      var styledMapOptions = {
+    		name: 'Custom Style'
+  			};
+
+  		var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+  		map.mapTypes.set(ae, customMapType);
+
+
+
+        var image = 'img/location_turkis_dig.png';
+  		var myLatLng = new google.maps.LatLng(47.210344,6.985175);
+  		var Marker = new google.maps.Marker({
+      		position: myLatLng,
+      		map: map,
+      		icon: image,
+      		title: 'Unser Bauernhof Le Peu Girard',
+    		});
+
+      
+      	}
+
+   	   	google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+		 var center = map.getCenter();
+		 google.maps.event.trigger(map, "resize");
+		 map.setCenter(center); 
+		});
+
+      	function detectBrowser() {
+		  var useragent = navigator.userAgent;
+		  var mapdiv = document.getElementById("map_canvas");
+
+		  if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1 ) {
+		    mapdiv.style.width = '100%';
+		    mapdiv.style.height = '100%';
+		  } else {
+		    mapdiv.style.width = '600px';
+		    mapdiv.style.height = '800px';
+		  }
+		}
+
+		
+
+    	</script>
+
+	
+
+</body>
+</html>
