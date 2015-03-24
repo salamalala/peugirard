@@ -410,7 +410,8 @@ li a{
        font-size: 0.7em;
        background-color: #447A9B;
        padding: 7px;
-       border-radius: 3px
+       border-radius: 3px;
+       z-index: 10;
 
       }
 
