@@ -168,25 +168,50 @@ nav{
   line-height: 90px;  
 }
 
+
+@media (max-width: 768px) {
+   .logo p {
+    width: 100px;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1em;
+       left: 90px;
+    }
+  }
+
+  @media (max-width: 480px) {
+     .logo img{
+         left: 60px;
+      }
+    }
+
 .logo img{
   position: fixed;
   top:10px;
   left: 10px;
-  height: 100px;
-  width: 100px;
+  height: 95px;
+  width: 95px;
   display: inline-block;
   transform: rotate(-5deg);
 }
 
+@media (max-width: 768px) {
+   .logo img {
+       height: 70px;
+        width: 70px;
+    }
+  }
+
+  @media (max-width: 480px) {
+     .logo img{
+         height: 40px;
+        width: 40px;
+      }
+    }
 
 
-@media (max-width: 1125px) {
- .logo img{
-   display: inline-block;
-   margin: 0 2px;
-   height: 90px;
- }
-}
+
 
 .logo 
 a:link,
@@ -375,7 +400,7 @@ li a{
       /*language*/
       a.language{
        position: fixed;
-       right: 30px;
+       right: 20px;
        top: 110px;
        font-family: "jaf-bernino-sans", sans-serif;
        font-weight: 300;
