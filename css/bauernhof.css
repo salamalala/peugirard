@@ -198,11 +198,7 @@ nav{
 }
 
 
-@media (max-width:768px) {
-  .logo a {
-   font-size: 0.65em;
- }
-}
+
 
 .logo p {
   font-family: "jaf-bernino-sans", sans-serif;
@@ -221,32 +217,9 @@ nav{
 
 }
 
-@media (max-width: 992px) {
- .logo p {
-   font-size: 0.9em;
- }
-}
 
-@media (max-width: 768px) {
- .logo p {
-   font-size: 1em;
-   left: 100px;
- }
-}
 
- @media (max-width: 480px) {
-   .logo p {
-   width: 100px;
-   padding-top: 25px;
-   text-align: center;
-   line-height: 1.5;
-   font-size: 0.8em;
-   left: 65px;
-   }
-   .logo img{
-     left: 60px;
-   }
- }
+
 
  .logo img{
   position: fixed;
@@ -259,17 +232,12 @@ nav{
   z-index: 20;
 }
 
-@media (max-width: 768px) {
- .logo img {
-   height: 70px;
-   width: 70px;
- }
-}
+
 
 @media (max-width: 480px) {
  .logo img{
-   height: 47px;
-   width: 47px;
+   height: 120px;
+   width: 120px;
    top: 20px;
  }
 }
