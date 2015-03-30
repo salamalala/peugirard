@@ -155,7 +155,6 @@ nav{
  .nav-icon:before { 
    content: url("../img/burger.svg"); 
    color: #fff;
-   font-size: 1.8em;
    height: 29px;
  }
 
@@ -253,8 +252,8 @@ nav{
   position: fixed;
   top:10px;
   left: 10px;
-  height: 95px;
-  width: 95px;
+  height: 170px;
+  width: 170px;
   display: inline-block;
   transform: rotate(-5deg);
   z-index: 20;
