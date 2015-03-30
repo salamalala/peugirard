@@ -59,79 +59,80 @@
     <div class="col-md-12">
       <h2>Accès:</h2>
       <p><span>En voiture:</span> Voir carte.</p><br>
-      <p><span>En transports publics: </span>Mit dem Zug bis Les Breuleux. Danach 20 Minuten zu Fuss bis Le Peu-Girard. Auf Wunsch holen wir Sie und/oder Ihr Gepäck am Bahnhof in Les Breuleux ab.</p>
+      <p><span>En transports publics: </span>En train jusqu’à la gare Les Breuleux . Puis 20 minutes de marche à pieds
+        jusqu’au Peu-Girard. Si vous le souhaitez, nous venons vous chercher ou prendre vos bagages à la gare.</p>
+      </div>
+
     </div>
 
-  </div>
+    <div class="block row">
+      <div class="col-md-12">
+        <h2>Liens:</h2>
+        <ul>
+         <li> <a href="http://www.juratourisme.ch" target="_blank">Juratourisme</a></li>
+         <li> <a href="http://www.juratourisme.ch/de/aktiv/wanderland.html" target="_blank">Randonnées à pied</a></li>
+         <li> <a href="http://www.juratourisme.ch/de/aktiv/veloland.html" target="_blank">Randonnées à vélo</a></li>
+         <li> <a href="http://www.centredeloisirs.ch/Wellness-spa-2.html" target="_blank">Wellness</a></li>
+         <li> <a href="http://www.juratourisme.ch/de/aktiv/langlauf/schlaufe-lesnbspbreuleux.1354.html" target="_blank">Ski de fond</a></li>
+         <li> <a href="http://www.cafe-du-soleil.ch/" target="_blank">Cafe du Soleil</a></li>
+         <li> <a href="http://www.cinemalux.ch/" target="_blank">Cinema Lux</a></li>
+         <li> <a href="http://www.lescheminsdubio.ch/de/" target="_blank">Le chemin du bio</a></li>
+         <li> <a href="http://www.edelweiss-cosmetique.ch/edelweiss" target="_blank">Cosmetiques à l'edelweiss</a></li>
 
-  <div class="block row">
-    <div class="col-md-12">
-      <h2>Liens:</h2>
-      <ul>
-       <li> <a href="http://www.juratourisme.ch" target="_blank">Juratourisme</a></li>
-       <li> <a href="http://www.juratourisme.ch/de/aktiv/wanderland.html" target="_blank">Wandern</a></li>
-       <li> <a href="http://www.juratourisme.ch/de/aktiv/veloland.html" target="_blank">Velofahren</a></li>
-       <li> <a href="http://www.centredeloisirs.ch/Wellness-spa-2.html" target="_blank">Wellness</a></li>
-       <li> <a href="http://www.juratourisme.ch/de/aktiv/langlauf/schlaufe-lesnbspbreuleux.1354.html" target="_blank">Langlaufen</a></li>
-       <li> <a href="http://www.cafe-du-soleil.ch/" target="_blank">Cafe du Soleil</a></li>
-       <li> <a href="http://www.cinemalux.ch/" target="_blank">Cinema Lux</a></li>
-       <li> <a href="http://www.lescheminsdubio.ch/de/" target="_blank">Le chemin du bio</a></li>
-       <li> <a href="http://www.edelweiss-cosmetique.ch/edelweiss" target="_blank">Edelweisskosmetik</a></li>
+       </div>						
 
-     </div>						
-
-   </div> <!--Ende textfeld-->
- </div> <!--Ende main row-->
+     </div> <!--Ende textfeld-->
+   </div> <!--Ende main row-->
 
 
-</div> <!--Ende Container-fluid-->
+ </div> <!--Ende Container-fluid-->
 
 
-<script type="text/javascript"
-src="http://maps.googleapis.com/maps/api/js?">
-</script>
+ <script type="text/javascript"
+ src="http://maps.googleapis.com/maps/api/js?">
+ </script>
 
-<script type="text/javascript">
+ <script type="text/javascript">
 
-var map;
-var bern = new google.maps.LatLng(47.210344,6.985175);
+ var map;
+ var bern = new google.maps.LatLng(47.210344,6.985175);
 
-var ae = 'custom_style';
+ var ae = 'custom_style';
 
 
-function initialize() {
- 
- var featureOpts = [
- {
-   stylers: [
-   { saturation: -65 }, 
-   { visibility: 'on' }, 
-   { lightness: 13 }, 
-   { gamma: 0.8 } 
-   ]
- },
- {
-   elementType: "geometry.fill",
-   stylers: [
-   { visibility: 'on' }
-   ]
- },
- 
- ];
- 
- var mapOptions = {
-  center: new google.maps.LatLng(47.210344,6.985175),
-  zoom: 12,
-  mapTypeControlOptions: {
-   mapTypeIds: [google.maps.MapTypeId.ROADMAP, ae]
- },
- mapTypeId: ae
-};
+ function initialize() {
 
-var map = new google.maps.Map(document.getElementById("map_canvas"),
+   var featureOpts = [
+   {
+     stylers: [
+     { saturation: -65 }, 
+     { visibility: 'on' }, 
+     { lightness: 13 }, 
+     { gamma: 0.8 } 
+     ]
+   },
+   {
+     elementType: "geometry.fill",
+     stylers: [
+     { visibility: 'on' }
+     ]
+   },
+
+   ];
+
+   var mapOptions = {
+    center: new google.maps.LatLng(47.210344,6.985175),
+    zoom: 12,
+    mapTypeControlOptions: {
+     mapTypeIds: [google.maps.MapTypeId.ROADMAP, ae]
+   },
+   mapTypeId: ae
+ };
+
+ var map = new google.maps.Map(document.getElementById("map_canvas"),
   mapOptions);
 
-var styledMapOptions = {
+ var styledMapOptions = {
   name: 'Custom Style'
 };
 

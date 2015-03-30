@@ -399,8 +399,8 @@ li a{
 
   .first_nav
   a:hover,
-  a:focus,
-  a:active{ 
+  .first_nav a:focus,
+  .first_nav a:active{ 
     outline: 0;
     text-decoration: none;
     background-color: #bf86a7; /*purple*/
@@ -409,8 +409,8 @@ li a{
 
   .second_nav
   a:hover,
-  a:focus,
-  a:active{ 
+  .second_nav a:focus,
+  .second_nav a:active{ 
     outline: 0;
     text-decoration: none;
     background-color: #e29a71; /*orange*/
@@ -419,8 +419,8 @@ li a{
 
   .third_nav
   a:hover,
-  a:focus,
-  a:active{ 
+  .third_nav a:focus,
+  .third_nav a:active{ 
     outline: 0;
     text-decoration: none;
     background-color: #d9c27a; /*yellow*/
@@ -428,19 +428,18 @@ li a{
   }
 
   .forth_nav
-  a:hover,
-  a:focus,
-  a:active{ 
+  a:hover, 
+  .forth_nav a:focus,
+  .forth_nav a:active{ 
     outline: 0;
     text-decoration: none;
     background-color: #76b061; /*green*/
     color: #013b41; /*dunkelgrau*/
   }
 
-  .fifth_nav
-  a:hover,
-  a:focus,
-  a:active{ 
+  .fifth_nav a:hover,
+  .fifth_nav a:focus,
+  .fifth_nav a:active{ 
     outline: 0;
     text-decoration: none;
     background-color: #35a69f; /*blue*/
