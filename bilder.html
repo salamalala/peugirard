@@ -141,6 +141,17 @@
 
 <script>
 
+$(document).ready(function() {
+  $('#slider1').nivoSlider();
+  $('#slider2').nivoSlider();
+  $('#slider3').nivoSlider();
+  $('#slider4').nivoSlider();
+  $('.nav-icon').on('click', function(e){
+    e.preventDefault();
+    $('nav ul').slideToggle();
+  });
+});
+
 
 $('#slider1').nivoSlider({
     effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
@@ -190,14 +201,7 @@ $('#slider2').nivoSlider({
     afterLoad: function(){}         // Triggers when slider has loaded
   });
 
-$(window).load(function() {
-  $('#slider1').nivoSlider();
-  $('#slider2').nivoSlider();
-  $('.nav-icon').on('click', function(e){
-    e.preventDefault();
-    $('nav ul').slideToggle();
-  });
-});
+
 
 
 </script>

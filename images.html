@@ -83,7 +83,7 @@
     <div class="block row">
      <div class="col-md-9 col-md-offset-1">
 
-      <h2>Unser Hof...</h2>
+      <h2>Notre ferme...</h2>
 
       <div id="slider4" class="nivoSlider">
         <img src="img/slider/start1.jpg" title="Notre ferme" data-thumb="img/thumbs/start1.jpg">      
@@ -142,26 +142,23 @@
 <!--javascript -->
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
-<script>
-  $(document).ready(function(){
-    $('.nav-icon').on('click', function(e){
-      e.preventDefault();
-      $('nav ul').slideToggle();
-    });
-  });
-</script>
-
 <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
 
 
-<script type="text/javascript">
-$(window).load(function() {
-  $('#slider3').nivoSlider();
-});
-</script>
 
-<script type="text/javascript">
+<script>
+
+$(document).ready(function() {
+
+  $('#slider3').nivoSlider();
+  $('#slider4').nivoSlider();
+  $('.nav-icon').on('click', function(e){
+    e.preventDefault();
+    $('nav ul').slideToggle();
+  });
+});
+
+
 $('#slider3').nivoSlider({
     effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
     slices: 1,                     // For slice animations
@@ -185,16 +182,7 @@ $('#slider3').nivoSlider({
     afterLoad: function(){}         // Triggers when slider has loaded
   });
 
-</script>
 
-
-<script type="text/javascript">
-$(window).load(function() {
-  $('#slider4').nivoSlider();
-});
-</script>
-
-<script type="text/javascript">
 $('#slider4').nivoSlider({
     effect: 'fade',            // Specify sets like: 'fold,fade,sliceDown'
     slices: 1,                     // For slice animations
@@ -218,8 +206,10 @@ $('#slider4').nivoSlider({
     afterLoad: function(){}         // Triggers when slider has loaded
   });
 
-</script>
 
+
+
+</script>
 
 
 </body>
